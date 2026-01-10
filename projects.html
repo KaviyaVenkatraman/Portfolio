@@ -2,107 +2,120 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects | Portfolio</title>
 <style>
-body{font-family:Arial;background:#f5f5f5;}
-header{background:#1f2937;color:white;padding:20px;text-align:center;}
-.project{background:white;margin:20px;padding:20px;border-radius:8px;}
-a{color:#2563eb;text-decoration:none;font-weight:bold;}
+/* Body & Background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1f2937, #4b5563);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Project Cards */
+.project {
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Project Titles */
+.project h2 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 5px 0 0;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #2563eb, #3b82f6);
+    transition: all 0.3s;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .project { padding: 20px; margin: 20px; }
+}
 </style>
 </head>
 <body>
 
 <header>
   <h1>My Projects</h1>
-  <a href="index.html" style="color:white;">← Back to Home</a>
+  <a href="index.html">← Back to Home</a>
 </header>
 
-    <div class="project">
+<div class="project">
   <h2>Coffee Haven Website</h2>
-  <p>
-    Simple one page modern layout.
-  </p>
-  <a href="https://kaviyavenkatraman.github.io/coffeewebsite/" targeet="_blank"> view live project </a>
-      <br><br><br>
-    </div>
-    
-    
-  <div class="project">
-  
-  <h2>Shopping Cart Website</h2>
-  <p>
-    Shopping cart application built using HTML, CSS, and JavaScript.
-    Features add-to-cart, remove items, and dynamic price calculation.
-  </p>
-  <a href="https://kaviyavenkatraman.github.io/Cart-Project/" target="_blank">
-    View Live Project →
-  </a>
-  <br><br><br>
-  <a href="https://github.com/KaviyaVenkatraman/Cart-Project" target="_blank">
-    View Code on GitHub →
-  </a>
+  <p>Simple one-page modern layout.</p>
+  <a href="https://kaviyavenkatraman.github.io/coffeewebsite/" target="_blank" class="btn">View Live →</a>
 </div>
 
-  
+<div class="project">
+  <h2>Shopping Cart Website</h2>
+  <p>Shopping cart application built using HTML, CSS, and JavaScript. Features add-to-cart, remove items, and dynamic price calculation.</p>
+  <a href="https://kaviyavenkatraman.github.io/Cart-Project/" target="_blank" class="btn">View Live →</a>
+  <a href="https://github.com/KaviyaVenkatraman/Cart-Project" target="_blank" class="btn">View Code →</a>
+</div>
+
 <div class="project">
   <h2>CineWiki – Multi Page Website</h2>
   <p>Wikipedia-style cinema actors website built using pure HTML and CSS.</p>
-  <a href="https://kaviyavenkatraman.github.io/cinewiki/" target="_blank">
-    View Live Project →
-  </a>
+  <a href="https://kaviyavenkatraman.github.io/cinewiki/" target="_blank" class="btn">View Live →</a>
 </div>
 
 <div class="project">
   <h2>Portfolio Website</h2>
   <p>Personal portfolio built using pure HTML and CSS.</p>
-  <a href="#">You are viewing this</a>
+  <a href="#" class="btn">You are viewing this</a>
 </div>
-
 
 <div class="project">
   <h2>Weather Web</h2>
-  <p>
-    Weather application built using HTML, CSS, and JavaScript.
-    Fetches real-time weather data based on city search.
-  </p>
-  <a href="https://kaviyavenkatraman.github.io/Weather-Web/" target="_blank">
-    View Live Project →
-  </a>
-  <br><br><br>
-  <a href="https://github.com/KaviyaVenkatraman/Weather-Web" target="_blank">
-    View Code on GitHub →
-  </a>
+  <p>Weather application built using HTML, CSS, and JavaScript. Fetches real-time weather data based on city search.</p>
+  <a href="https://kaviyavenkatraman.github.io/Weather-Web/" target="_blank" class="btn">View Live →</a>
+  <a href="https://github.com/KaviyaVenkatraman/Weather-Web" target="_blank" class="btn">View Code →</a>
 </div>
-
-  <div class="project">
-  <h2>Shopping Cart Website</h2>
-  <p>
-    Shopping cart application built using HTML, CSS, and JavaScript.
-    Features add-to-cart, remove items, and dynamic price calculation.
-  </p>
-  <a href="https://kaviyavenkatraman.github.io/Cart-Project/" target="_blank">
-    View Live Project →
-  </a>
-  <br><br><br>
-  <a href="https://github.com/KaviyaVenkatraman/Cart-Project" target="_blank">
-    View Code on GitHub →
-  </a>
-</div>
-
-
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
