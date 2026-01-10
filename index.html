@@ -3,130 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kaviya | Portfolio</title>
+<title>Kaviya Venkatraman | Portfolio</title>
+
 <style>
-/* Reset & Body */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f5f7fa;
-    color: #333;
+/* Base */
+body{
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg,#f5f7fa,#e4ebf3);
+  color:#1f2937;
 }
 
 /* Header */
-header {
-    background: linear-gradient(90deg, #1f2937, #4b5563);
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+header{
+  background: linear-gradient(90deg,#111827,#374151);
+  color:white;
+  padding:60px 20px;
+  text-align:center;
 }
-header h1 {
-    margin: 0;
-    font-size: 2.8em;
+header h1{
+  margin:0;
+  font-size:2.7rem;
 }
-header p {
-    margin: 10px 0 20px;
-    font-size: 1.2em;
-    font-weight: 400;
+header p{
+  margin:12px 0 20px;
+  font-size:1.15rem;
+  color:#d1d5db;
 }
-
-/* Navigation */
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 14px;
+  font-weight:600;
 }
-nav a:hover {
-    color: #3b82f6;
+nav a:hover{
+  text-decoration:underline;
 }
 
-/* Section Cards */
-section {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Sections */
+section{
+  max-width:900px;
+  margin:auto;
+  padding:50px 20px;
 }
-.card {
-    background: white;
-    width: 90%;
-    max-width: 700px;
-    margin: 20px 0;
-    padding: 30px 25px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+.card{
+  background:white;
+  padding:30px;
+  margin-bottom:30px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:transform .3s, box-shadow .3s;
 }
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 40px rgba(0,0,0,0.12);
 }
-.card h2 {
-    margin-top: 0;
-    color: #1f2937;
-    font-size: 1.6em;
+.card h2{
+  margin-top:0;
+  background:linear-gradient(90deg,#2563eb,#3b82f6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
-.card p, .card ul {
-    line-height: 1.6;
-    margin: 10px 0 0;
-}
-.card ul {
-    padding-left: 20px;
+
+/* Lists */
+ul{
+  padding-left:20px;
+  line-height:1.8;
 }
 
 /* Footer */
-footer {
-    background: #1f2937;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.95em;
+footer{
+  background:#111827;
+  color:#e5e7eb;
+  text-align:center;
+  padding:20px;
+  font-size:.9rem;
 }
 
 /* Responsive */
-@media (max-width: 600px) {
-    header h1 { font-size: 2em; }
-    header p { font-size: 1em; }
-    .card { padding: 20px; }
+@media(max-width:600px){
+  header h1{font-size:2rem;}
 }
 </style>
 </head>
+
 <body>
 
 <header>
   <h1>Kaviya Venkatraman</h1>
-  <p>Frontend Developer (HTML, CSS, JavaScript)</p>
+  <p>Associate Software Engineer | Frontend Developer</p>
   <nav>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
+    <a href="resume.pdf" target="_blank">Resume</a>
   </nav>
 </header>
 
 <section>
+
   <div class="card">
     <h2>About Me</h2>
     <p>
-      I am a passionate frontend developer with strong knowledge in HTML, CSS, and JavaScript.
-      I enjoy building clean, multi-page websites, structured layouts, and interactive web components.
+      I am a Computer Science graduate and frontend developer with a strong foundation in
+      HTML, CSS, JavaScript, and core computer science concepts.
+      I enjoy building clean, responsive, and well-structured web interfaces and
+      continuously improving my problem-solving skills.
     </p>
   </div>
 
   <div class="card">
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
     <ul>
-      <li>HTML5 & Semantic Markup</li>
-      <li>CSS3 & Responsive Design</li>
-      <li>Basic JavaScript & DOM Manipulation</li>
-      <li>GitHub Pages Deployment & Version Control</li>
+      <li><strong>Languages:</strong> Python, Java</li>
+      <li><strong>Web:</strong> HTML5, CSS3, JavaScript</li>
+      <li><strong>Frameworks:</strong> Flask, Django (basic exposure)</li>
+      <li><strong>Databases:</strong> MySQL, SQLite</li>
+      <li><strong>Core Concepts:</strong> OOP, SDLC, Networking Basics</li>
+      <li><strong>Tools:</strong> Git/GitHub, VS Code</li>
     </ul>
   </div>
+
+  <div class="card">
+    <h2>Experience</h2>
+    <p>
+      <strong>Frontend Developer Intern – Inodesys</strong><br>
+      Designed responsive UI components, worked across SDLC phases,
+      integrated APIs, and fixed production issues while following coding standards.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Highlights</h2>
+    <ul>
+      <li>Built multiple live web projects using pure HTML, CSS, and JavaScript</li>
+      <li>Presented an AI-based project at an international conference</li>
+      <li>Strong interest in frontend development and UI structuring</li>
+    </ul>
+  </div>
+
 </section>
 
 <footer>
-  © 2026 Kaviya Venkatraman | Portfolio
+  © 2026 Kaviya Venkatraman · Portfolio
 </footer>
 
 </body>
